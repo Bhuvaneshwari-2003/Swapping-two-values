@@ -1,36 +1,32 @@
-# Swapping-two-values
-## AIM:
-To write a python program for swapping of two values
-## EQUIPEMENT'S REQUIRED: 
+# Circulate-the-values-of-N-variables
+## Aim:
+To write a python program to circulate the n variables using function concept
+## Equipment’s required:
 PC
 Anaconda - Python 3.7
-## ALGORITHM: 
-### Step 1:
-Get the two values from the user
+## Algorithm: 
+### Step 1: 
+Commence the program.
 ### Step 2: 
-Assign the value of second variable to a temporary variable 
+Get the value from the user for the number of rotation.
 ### Step 3: 
-Assign the value of the first variable to the second variable.
-### Step 4:  
-Assign the value in temporary variable to the first variable
+Get the value from the user for the elements.
+### Step 4: 
+Using the slicing concept rotate the list.
 ### Step 5: 
-Print both the values it would be interchanged
+Print the rotated list.
 ### Step 6: 
-End the program
-## PROGRAM:
+End the program.
+## Program:
 ~~~
-num1=int(input())
-num2=int(input())
-temp=num1
-num1=num2
-num2=temp
-print("Swapped values are:", num1, num2)
+def circulate():
+    n=int(input())
+    l=[10,20,30,40,50,60]
+    l=l[n:]+l[:n]
+    print("After circulating the values are:",l)
 ~~~
+## Output:
+![GitHub Logo](2.png)
 
-## OUTPUT:
-![GitHub Logo](swap.png)
-
-## RESULT:
-Thus the swapping of two values are successfully executed
-
-
+## Result:
+The variables are rotated successfully
